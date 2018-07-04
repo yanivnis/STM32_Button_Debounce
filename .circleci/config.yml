@@ -14,5 +14,8 @@ jobs:
       - run:
           name: test
           command: python test.py
+      - run:
+          name: test
+          command: python test_auto_gen.py
       - store_artifacts:
           path: BUILD/

@@ -25,7 +25,7 @@ void button1_onpressed_cb(void)
 
 int main()
 {
-    printf("mBed boot done \n");
+    printf("mBed boot fail \n");
 
     //button1.mode(PullUp); // Activate pull-up
     button1.fall(callback(button1_onpressed_cb)); // Attach ISR to handle button press event

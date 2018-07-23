@@ -28,7 +28,7 @@ int main()
     printf("mBed boot done - Circle CI Run\n");
 
     //button1.mode(PullUp); // Activate pull-up
-    //button1.fall(callback(button1_onpressed_cb)); // Attach ISR to handle button press event
+    button1.fall(callback(button1_onpressed_cb)); // Attach ISR to handle button press event
 
     int idx = 0; // Just for printf below
 
